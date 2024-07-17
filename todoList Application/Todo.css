@@ -1,0 +1,71 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap');
+*{
+  box-sizing: border-box;
+  padding:0;
+  outline:none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  color:black;
+  transition:.2s ease-in;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: rgb(238, 225, 182);
+}
+
+div.primaryContainer{
+  display:grid;
+  grid-template-columns: 30vw 20vw 20vw 30vw;
+  z-index: 1;
+}
+div.primaryContainer .btnSave{
+  padding:1vw;
+  background-color: rgb(49, 143, 49);
+
+  border:1.5px double black;
+  border-radius:15px;
+  color:black;
+  margin-right:1rem;
+}
+
+div.todoList .btnDelete{
+  background-color: rgb(252, 252, 252);
+  border:none;
+  border-radius:10px;
+  margin-right:1rem;
+  color:black;
+  padding:.5vw;
+  font-size:2.5vw;
+  width:20vw;
+
+}
+input{
+  border-radius:10px;
+  margin-right:.3rem;
+  border:none;
+  padding:.2rem;
+  color:black;
+  text-align: center;
+}
+div.primaryContainer .btnSave:hover{
+  background-color: rgb(181, 249, 175);
+
+}
+div.todoList .btnDelete:hover{
+  background-color: rgb(245, 241, 195);
+  box-shadow: 0 0 2rem black;
+}
+
+div.todoList{
+  display:grid;
+  grid-template-columns: 30vw 20vw 20vw 30vw;
+  text-align: center;
+  margin:1rem 0;
+  font-size:2.5vw;
+  z-index: 1;
+}
+
+div.primaryContainer .todoOutput{
+  width:100%;
+  height:auto;
+}

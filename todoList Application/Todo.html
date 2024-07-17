@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Todo.css" type = "text/css">
+  <title>Mr. Bro Code - Todo List - Project</title>
+</head>
+<body>
+  <center><h2 class="logo" style = "box-shadow: 0 0 1rem black; border-radius:15px;margin-bottom:2rem;width:200px;">Mr. Bro Code</h2></center>
+  <div class="primaryContainer">
+
+  <input type="text" placeholder = "Add Todo" class = "name" onkeydown="kdSaveTodo(event)" >
+  <input type="date" class = "date">
+  <input type="time" class = "time">
+  <button class="btnSave" onclick = "addTodo();">Save</button>
+  <div class= "todoOutput" ></div>
+</div>
+  <script src = "Todo.js"></script>
+</body>
+</html>
